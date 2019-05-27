@@ -1,0 +1,8 @@
+app-question-controls{
+    width:100%;
+    min-height: 139px;
+}
+
+button.btn:focus{
+    box-shadow:none;
+}

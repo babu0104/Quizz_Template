@@ -1,0 +1,10 @@
+<div class="row" *ngIf="options">
+  <div class="col-6" *ngFor="let option of options;let i=index">
+    <div class="option">
+      <label class="font-weight-normal" [attr.for]="option_i">
+        <input id="{{option}}-{{i}}" name="radioButton" type="radio" value="{{option}}" (change)="onSelectionChange(option)" />
+        {{option}}
+      </label>
+    </div>
+  </div>
+</div>
